@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="Bears Theme">
+
+ <object name="bears_theme_custom_images"
+    meta_type="Filesystem Directory View"
+    directory="bears.theme:skins/bears_theme_custom_images"/>
+ <object name="bears_theme_custom_templates"
+    meta_type="Filesystem Directory View"
+    directory="bears.theme:skins/bears_theme_custom_templates"/>
+ <object name="bears_theme_styles"
+    meta_type="Filesystem Directory View"
+    directory="bears.theme:skins/bears_theme_styles"/>
+
+ <skin-path name="Bears Theme" based-on="Sunburst Theme">
+  <layer name="bears_theme_custom_images"
+     insert-after="custom"/>
+  <layer name="bears_theme_custom_templates"
+     insert-after="bears_theme_custom_images"/>
+  <layer name="bears_theme_styles"
+     insert-after="bears_theme_custom_templates"/>
+ </skin-path>
+
+</object>

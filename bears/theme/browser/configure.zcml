@@ -20,6 +20,14 @@
       layer=".interfaces.IThemeSpecific"
       />
 
+  <!-- Resource directory for fonts -->
+  <browser:resourceDirectory
+      name="fonts"
+      directory="fonts"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+
   <!-- Resource directory for stylesheets -->
   <browser:resourceDirectory
       name="bears.theme.stylesheets"
